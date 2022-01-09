@@ -76,7 +76,12 @@ body{
         }
         .card__option{
             display: inline-block;
+            color: var(---desaturated-blue);
         }
+            .card__option:hover{
+                color: white;
+                cursor: pointer;
+            }
     .card__personal-info{
         justify-content: space-between !important;
         top: 0;
@@ -148,18 +153,21 @@ body{
             cursor: pointer;
             gap: 5px;
         }
-        .card-statistic__toggler_dot{
-            justify-self: right;
-            padding-bottom: 5px;
-        }
-            .card-statistic__toggler_dot::after{
-                content: '';
-                display: inline-block;
-                width: 5px;
-                height: 5px;
-                border-radius: 50%;
-                background-color: var(---desaturated-blue);
+            .card-statistic__toggler_dot{
+                justify-self: right;
+                padding-bottom: 5px;
             }
+                .card-statistic__toggler_dot::after{
+                    content: '';
+                    display: inline-block;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: var(---desaturated-blue);
+                }
+                    .card-statistic__toggler:hover .card-statistic__toggler_dot::after{
+                        background-color: white;
+                    }
 
     .card-statistic__second-line{
         display: flex;
@@ -198,7 +206,7 @@ body{
     background-color: var(---soft-orange-self-care);
 }
 
-@media screen and (min-width: 375px){
+@media screen and (min-width: 376px){
     .grid{
         grid-template-columns: repeat(4, 12.5rem);
         grid-template-rows: repeat(2, 13.5rem);
