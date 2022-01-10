@@ -42,3 +42,4 @@ I asked a friend to choose one of the Front End Challenges in the Junior level l
   1. I want to improve the responsiveness to the mobile devices, maybe to all of them, I haven't truly tested it in various devices.
   2. Add the preview of layout, a brief description and a title on/to/in the link, using the Open Graph Protocol – so that when I share the link with friends they will be able to see those informations as they do when we share FACEBOOK, WHATSAPP, INSTAGRAM and many other links (even GITHUB has it on it's links).
   3. Translate this README to pt-BR.
+  4. Improve the accessibility of the site.
