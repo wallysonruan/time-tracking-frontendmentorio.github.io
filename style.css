@@ -206,7 +206,7 @@ body{
     background-color: var(---soft-orange-self-care);
 }
 
-@media screen and (min-width: 376px){
+@media screen and (min-width: 667px){
     .grid{
         grid-template-columns: repeat(4, 12.5rem);
         grid-template-rows: repeat(2, 13.5rem);
