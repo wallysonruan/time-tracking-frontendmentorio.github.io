@@ -7,210 +7,212 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid">
-        <!--CARD PERSONAL INFO-->
-    
-        <header class="card card__options-container grid-item-1">
-            <nav>
-                <ul class="card__options center">
-                    <li class="card__option">
-                        <button aria-label="Click here to see the daily statistics" id="daily">
-                            Daily
-                        </button>
-                    </li>
-                    <li class="card__option">
-                        <button aria-label="Click here to see the weekly statistics" id="weekly">
-                            Weekly
-                        </button>
-                    </li>
-                    <li class="card__option">
-                        <button aria-label="Click here to see the monthly statistics" id="monthly">
-                            Monthly
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-                <!---->
-                <div class="card card-secondary center card__personal-info">
-                    <div class="card-secondary__photo-container center">
-                        <img class="photo" src="images/image-jeremy.png" alt="">
+    <main>
+        <div class="grid">
+            <!--CARD PERSONAL INFO-->
+        
+            <header class="card card__options-container grid-item-1">
+                <nav>
+                    <ul class="card__options center">
+                        <li class="card__option">
+                            <button aria-label="Click here to see the daily statistics" id="daily">
+                                Daily
+                            </button>
+                        </li>
+                        <li class="card__option">
+                            <button aria-label="Click here to see the weekly statistics" id="weekly">
+                                Weekly
+                            </button>
+                        </li>
+                        <li class="card__option">
+                            <button aria-label="Click here to see the monthly statistics" id="monthly">
+                                Monthly
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                    <!---->
+                    <div class="card card-secondary center card__personal-info">
+                        <div class="card-secondary__photo-container center">
+                            <img class="photo" src="images/image-jeremy.png" alt="">
+                        </div>
+                        <div class="card-secondary__name-container center">
+                            <h1 class="name__title">Report for</h1>
+                            <h2 class="name">Jeremy Robson</h2>
+                        </div>
                     </div>
-                    <div class="card-secondary__name-container center">
-                        <h1 class="name__title">Report for</h1>
-                        <h2 class="name">Jeremy Robson</h2>
+            </header>
+                
+            <!--WORK-->
+            <section class="card card-statistic card-statistic-work grid-item-2">
+                    <img class="card-statistic__icon" src="images/icon-work.svg" alt="">
+                    
+                    <div class="card card-secondary card-secondary__statistic">
+                        <div class="card-statistic__first-line">
+                            <h2 class="card-statistic__title center">
+                                Work
+                            </h2>
+                            <button aria-label="menu button" class="card-statistic__toggler center">
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                            </button>
+                    </div>
+                    <div class="card-statistic__second-line">
+                        <p class="card-statistic__actual-time">
+                            <span id="work-actual-time"></span>
+                        </p>
+                        <p class="card-statistic__past-time center">
+                            <span id="work-past-time"></span>
+                        </p>
                     </div>
                 </div>
-        </header>
-            
-        <!--WORK-->
-        <section class="card card-statistic card-statistic-work grid-item-2">
-                <img class="card-statistic__icon" src="images/icon-work.svg" alt="">
+                <!---->
+            </section>
+            <!---->
+    
+            <!--PLAY-->
+            <section class="card card-statistic card-statistic-play grid-item-3">
+                <img class="card-statistic__icon" src="images/icon-play.svg" alt="">
                 
                 <div class="card card-secondary card-secondary__statistic">
                     <div class="card-statistic__first-line">
-                        <p class="card-statistic__title center">
-                            Work
+                            <h2 class="card-statistic__title center">
+                                Play
+                            </h2>
+                            <button aria-label="menu button" class="card-statistic__toggler center">
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                            </button>
+                    </div>
+                    <div class="card-statistic__second-line">
+                        <p class="card-statistic__actual-time">
+                            <span id="play-actual-time"></span>
                         </p>
-                        <button aria-label="menu button" class="card-statistic__toggler center">
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                        </button>
-                </div>
-                <div class="card-statistic__second-line">
-                    <p class="card-statistic__actual-time">
-                        <span id="work-actual-time"></span>
-                    </p>
-                    <p class="card-statistic__past-time center">
-                        <span id="work-past-time"></span>
-                    </p>
-                </div>
-            </div>
-            <!---->
-        </section>
-        <!---->
-
-        <!--PLAY-->
-        <section class="card card-statistic card-statistic-play grid-item-3">
-            <img class="card-statistic__icon" src="images/icon-play.svg" alt="">
-            
-            <div class="card card-secondary card-secondary__statistic">
-                <div class="card-statistic__first-line">
-                        <p class="card-statistic__title center">
-                            Play
+                        <p class="card-statistic__past-time center">
+                            <span id="play-past-time"></span>
                         </p>
-                        <button aria-label="menu button" class="card-statistic__toggler center">
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                        </button>
+                    </div>
                 </div>
-                <div class="card-statistic__second-line">
-                    <p class="card-statistic__actual-time">
-                        <span id="play-actual-time"></span>
-                    </p>
-                    <p class="card-statistic__past-time center">
-                        <span id="play-past-time"></span>
-                    </p>
-                </div>
-            </div>
+                <!---->
+            </section>
             <!---->
-        </section>
-        <!---->
-
-        <!--STUDY-->
-        <section class="card card-statistic card-statistic-study grid-item-4">
-            <img class="card-statistic__icon" src="images/icon-study.svg" alt="">
-            
-            <div class="card card-secondary card-secondary__statistic">
-                <div class="card-statistic__first-line">
-                        <p class="card-statistic__title center">
-                            Study
+    
+            <!--STUDY-->
+            <section class="card card-statistic card-statistic-study grid-item-4">
+                <img class="card-statistic__icon" src="images/icon-study.svg" alt="">
+                
+                <div class="card card-secondary card-secondary__statistic">
+                    <div class="card-statistic__first-line">
+                            <h2 class="card-statistic__title center">
+                                Study
+                            </h2>
+                            <button aria-label="menu button" class="card-statistic__toggler center">
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                            </button>
+                    </div>
+                    <div class="card-statistic__second-line">
+                        <p class="card-statistic__actual-time">
+                            <span id="study-actual-time"></span>
                         </p>
-                        <button aria-label="menu button" class="card-statistic__toggler center">
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                        </button>
-                </div>
-                <div class="card-statistic__second-line">
-                    <p class="card-statistic__actual-time">
-                        <span id="study-actual-time"></span>
-                    </p>
-                    <p class="card-statistic__past-time center">
-                        <span id="study-past-time"></span>
-                    </p>
-                </div>
-            </div>
-            <!---->
-        </section>
-        <!---->
-
-        <!--EXERCISE-->
-        <section class="card card-statistic card-statistic-exercise grid-item-5">
-            <img class="card-statistic__icon" src="images/icon-exercise.svg" alt="">
-            
-            <div class="card card-secondary card-secondary__statistic">
-                <div class="card-statistic__first-line">
-                        <p class="card-statistic__title center">
-                            Exercise
+                        <p class="card-statistic__past-time center">
+                            <span id="study-past-time"></span>
                         </p>
-                        <button aria-label="menu button" class="card-statistic__toggler center">
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                        </button>
+                    </div>
                 </div>
-                <div class="card-statistic__second-line">
-                    <p class="card-statistic__actual-time">
-                        <span id="exercise-actual-time"></span>
-                    </p>
-                    <p class="card-statistic__past-time center">
-                        <span id="exercise-past-time"></span>
-                    </p>
-                </div>
-            </div>
+                <!---->
+            </section>
             <!---->
-        </section>
-        <!---->
-
-        <!--SOCIAL-->
-        <section class="card card-statistic card-statistic-social grid-item-6">
-            <img class="card-statistic__icon" src="images/icon-social.svg" alt="">
-            
-            <div class="card card-secondary card-secondary__statistic">
-                <div class="card-statistic__first-line">
-                        <p class="card-statistic__title center">
-                            Social
+    
+            <!--EXERCISE-->
+            <section class="card card-statistic card-statistic-exercise grid-item-5">
+                <img class="card-statistic__icon" src="images/icon-exercise.svg" alt="">
+                
+                <div class="card card-secondary card-secondary__statistic">
+                    <div class="card-statistic__first-line">
+                            <h2 class="card-statistic__title center">
+                                Exercise
+                            </h2>
+                            <button aria-label="menu button" class="card-statistic__toggler center">
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                            </button>
+                    </div>
+                    <div class="card-statistic__second-line">
+                        <p class="card-statistic__actual-time">
+                            <span id="exercise-actual-time"></span>
                         </p>
-                        <button aria-label="menu button" class="card-statistic__toggler center">
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                        </button>
-                </div>
-                <div class="card-statistic__second-line">
-                    <p class="card-statistic__actual-time">
-                        <span id="social-actual-time"></span>
-                    </p>
-                    <p class="card-statistic__past-time center">
-                        <span id="social-past-time"></span>
-                    </p>
-                </div>
-            </div>
-            <!---->
-        </section>
-        <!---->
-
-        <!--SELF CARE-->
-        <section class="card card-statistic card-statistic-self-care grid-item-7">
-            <img class="card-statistic__icon" src="images/icon-self-care.svg" alt="">
-            
-            <div class="card card-secondary card-secondary__statistic">
-                <div class="card-statistic__first-line">
-                        <p class="card-statistic__title center">
-                            Self Care
+                        <p class="card-statistic__past-time center">
+                            <span id="exercise-past-time"></span>
                         </p>
-                        <button aria-label="menu button" class="card-statistic__toggler center">
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                            <span class="card-statistic__toggler_dot"></span>
-                        </button>
+                    </div>
                 </div>
-                <div class="card-statistic__second-line">
-                    <p class="card-statistic__actual-time">
-                        <span id="self-care-actual-time"></span>
-                    </p>
-                    <p class="card-statistic__past-time center">
-                        <span id="self-care-past-time"></span>
-                    </p>
-                </div>
-            </div>
+                <!---->
+            </section>
             <!---->
-        </section>
-        <!----> 
-
-    </div>
+    
+            <!--SOCIAL-->
+            <section class="card card-statistic card-statistic-social grid-item-6">
+                <img class="card-statistic__icon" src="images/icon-social.svg" alt="">
+                
+                <div class="card card-secondary card-secondary__statistic">
+                    <div class="card-statistic__first-line">
+                            <h2 class="card-statistic__title center">
+                                Social
+                            </h2>
+                            <button aria-label="menu button" class="card-statistic__toggler center">
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                            </button>
+                    </div>
+                    <div class="card-statistic__second-line">
+                        <p class="card-statistic__actual-time">
+                            <span id="social-actual-time"></span>
+                        </p>
+                        <p class="card-statistic__past-time center">
+                            <span id="social-past-time"></span>
+                        </p>
+                    </div>
+                </div>
+                <!---->
+            </section>
+            <!---->
+    
+            <!--SELF CARE-->
+            <section class="card card-statistic card-statistic-self-care grid-item-7">
+                <img class="card-statistic__icon" src="images/icon-self-care.svg" alt="">
+                
+                <div class="card card-secondary card-secondary__statistic">
+                    <div class="card-statistic__first-line">
+                            <h2 class="card-statistic__title center">
+                                Self Care
+                            </h2>
+                            <button aria-label="menu button" class="card-statistic__toggler center">
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                                <span class="card-statistic__toggler_dot"></span>
+                            </button>
+                    </div>
+                    <div class="card-statistic__second-line">
+                        <p class="card-statistic__actual-time">
+                            <span id="self-care-actual-time"></span>
+                        </p>
+                        <p class="card-statistic__past-time center">
+                            <span id="self-care-past-time"></span>
+                        </p>
+                    </div>
+                </div>
+                <!---->
+            </section>
+            <!----> 
+    
+        </div>
+    </main>
 
 <script src="main.js"></script>
 </body>
