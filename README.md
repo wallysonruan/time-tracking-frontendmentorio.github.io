@@ -25,11 +25,155 @@ I asked a friend to choose one of the Front End Challenges in the Junior level l
   2. Just finished to add the functionalities. It was quite fun to try and add them because it was the first time I really tried to access an object and get specifics values. Coding this project has taught me the following things about JS objects:
       1. You can use "Object.values(obj)" to get to know what an object has inside.
       2. The use of map iteration, it's a truly magnificient tool, I'll be looking forward to use it again.
-      3. You can't store a key inside a variable and use that variable to access a value, for example: `let a = "age" [...] data = array.name.a`
+      3. You can't store a key inside a variable and use that variable to access a value, for example: 
+       
+      `let a = "age" [...] data = array.name.a`
+      
   3. I've used the SWITCH and a lot of ARROW FUNCTIONS, and it feels amazing to understand them more. Arrow function saved me when tying some functions to the buttons, as in:
       1. I created a function that would update the timers everytime it was called (some parameters were required);
-      2. I created the buttons and attached the following `event.listener` to them: `button.AddEventListener("click", updateTime("daily", currentTime, pastTime));`;
-      3. I thought that would be just fine, but whenever I reloaded the page the button was triggered without have been clicked, instead of creating another function to call the function updateTime, I coded a simple arrow function and that worked. The arrow function: `button.AddEventListener("click", go => updateTime("daily", currentTime, pastTime));`, that seems to mean: the second function is being triggered because you have passed the parameters already, now that you have made it a callback function of the "go" arrow function, which has no parameters, the second will be waiting for the first one to be triggered, which will only occur when the button is clicked.
+      2. I created the buttons and attached the following `event.listener` to them:
+      
+      `button.AddEventListener("click", updateTime("daily", currentTime, pastTime));`
+      
+      ;
+      4. I thought that would be just fine, but whenever I reloaded the page the button was triggered without have been clicked, instead of creating another function to call the function updateTime, I coded a simple arrow function and that worked. The arrow function: 
+      
+      `button.AddEventListener("click", go => updateTime("daily", currentTime, pastTime));`
+      
+      , that seems to mean: the second function is being triggered because you have passed the parameters already, now that you have made it a callback function of the "go" arrow function, which has no parameters, the second will be waiting for the first one to be triggered, which will only occur when the button is clicked.
+
+*01/11/2021:*
+  1. While I was trying to correct the accessibility errors that FRONTEND had pointed out, one of them being the lack of landmarks, I found out some interesting things, for example:
+
+  When I put the personal info card inside a `<header>`, the card was comprised, that changed after I set the card itself as the header, to, the first code was:
+  
+      <!--CARD PERSONAL INFO-->
+      <header>
+        <div class="card card__options-container grid-item-1">
+          [...]
+        </div>
+      </header>
+   
+ and the final code is:
+   
+      <!--CARD PERSONAL INFO-->
+      <header class="card card__options-container grid-item-1">
+        [...]
+      </header>
+
+I had the same problem with the `<section>` tag, for I had writen the cards as follows: 
+
+        <!--WORK-->
+        <div class="card card-statistic card-statistic-work grid-item-2">
+          [...]
+        </div>
+
+        <!--PLAY-->
+        <div class="card card-statistic card-statistic-play grid-item-3">
+          [...]
+        </div>
+ 
+  To solve the lack of landmarks, I tried to put it all inside a section tag, as:
+ 
+        <!--WORK-->
+        <section>
+          <div class="card card-statistic card-statistic-work grid-item-2">
+            [...]
+          </div>
+        </section>
+        
+        <!--PLAY-->
+        <section>
+          <div class="card card-statistic card-statistic-work grid-item-3">
+            [...]
+          </div>
+        </section>
+  
+  But that created a problem I wasn't expecting. I had set the cards column to breakdown vertically to two cards per column, in this sequence:
+  
+  <table>
+    <th>
+        First Column
+    </th>
+    <th>
+        Second Column
+    </th>
+    <th>
+        Third Column
+    </th>
+    <th>
+        Fourth Column
+    </th>
+    <tr>
+      <td>
+        Personal Info Card
+      </td>
+      <td>
+        Work
+        <br>
+        Play
+      </td>
+      <td>
+        Study
+        <br>
+        Exercise
+      </td>
+      <td>
+        Social
+        <br>
+        Self Care
+      </td>
+    </tr>
+  </table>
+  
+But right after the adition of the `<section>` the cards were re-organized, the column was breaking horizontaly, as:
+
+<table>
+    <th>
+        First Column
+    </th>
+    <th>
+        Second Column
+    </th>
+    <th>
+        Third Column
+    </th>
+    <th>
+        Fourth Column
+    </th>
+    <tr>
+      <td>
+        Personal Info Card
+      </td>
+      <td>
+        Work
+        <br>
+        Exercise
+      </td>
+      <td>
+        Play
+        <br>
+        Social
+      </td>
+      <td>
+        Study
+        <br>
+        Self Care
+      </td>
+    </tr>
+  </table>
+
+I solved that by making the section the card main container, so the final code is:
+
+        <!--WORK-->
+          <section class="card card-statistic card-statistic-work grid-item-2">
+            [...]
+          </section>
+        
+        <!--PLAY-->
+          <section class="card card-statistic card-statistic-work grid-item-3">
+            [...]
+          </section>
 
 ## What did I set myself to do, but I didn't and why?
 
@@ -42,4 +186,3 @@ I asked a friend to choose one of the Front End Challenges in the Junior level l
   1. I want to improve the responsiveness to the mobile devices, maybe to all of them, I haven't truly tested it in various devices.
   2. Add the preview of layout, a brief description and a title on/to/in the link, using the Open Graph Protocol – so that when I share the link with friends they will be able to see those informations as they do when we share FACEBOOK, WHATSAPP, INSTAGRAM and many other links (even GITHUB has it on it's links).
   3. Translate this README to pt-BR.
-  4. Improve the accessibility of the site.
