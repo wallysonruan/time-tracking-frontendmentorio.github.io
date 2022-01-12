@@ -10,10 +10,9 @@
 li{
     list-style-type: none;
 }
-button{
+button, h1, h2{
     all: unset;
 }
-
 
 :root{
 /*Colors*/

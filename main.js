@@ -256,6 +256,8 @@ const updateTime = (period) =>{
     break
    }}
 
+window.addEventListener("load", updateTime("daily"));
+
 dailyBttn.addEventListener("click", go => updateTime("daily"));
 weeklyBttn.addEventListener("click", go => updateTime("weekly"));
 monthlyBttn.addEventListener("click", go => updateTime("monthly"));

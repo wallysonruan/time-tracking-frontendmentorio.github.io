@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,48 +8,50 @@
 </head>
 <body>
     <div class="grid">
-
         <!--CARD PERSONAL INFO-->
-        <div class="card card__options-container grid-item-1">
-            <ul class="card__options center">
-                <li class="card__option">
-                    <button id="daily">
-                        Daily
-                    </button>
-                </li>
-                <li class="card__option">
-                    <button id="weekly">
-                        Weekly
-                    </button>
-                </li>
-                <li class="card__option">
-                    <button id="monthly">
-                        Monthly
-                    </button>
-                </li>
-            </ul>
-            <!---->
-            <div class="card card-secondary center card__personal-info">
-                <div class="card-secondary__photo-container center">
-                   <img class="photo" src="images/image-jeremy.png" alt="">
+    
+        <header class="card card__options-container grid-item-1">
+            <nav>
+                <ul class="card__options center">
+                    <li class="card__option">
+                        <button aria-label="Click here to see the daily statistics" id="daily">
+                            Daily
+                        </button>
+                    </li>
+                    <li class="card__option">
+                        <button aria-label="Click here to see the weekly statistics" id="weekly">
+                            Weekly
+                        </button>
+                    </li>
+                    <li class="card__option">
+                        <button aria-label="Click here to see the monthly statistics" id="monthly">
+                            Monthly
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+                <!---->
+                <div class="card card-secondary center card__personal-info">
+                    <div class="card-secondary__photo-container center">
+                        <img class="photo" src="images/image-jeremy.png" alt="">
+                    </div>
+                    <div class="card-secondary__name-container center">
+                        <h1 class="name__title">Report for</h1>
+                        <h2 class="name">Jeremy Robson</h2>
+                    </div>
                 </div>
-                <div class="card-secondary__name-container center">
-                    <p class="name__title">Report for</p>
-                    <p class="name">Jeremy Robson</p>
-                </div>
-            </div>
-        </div>
-
-        <!--WORK-->
-        <div class="card card-statistic card-statistic-work grid-item-2">
-            <img class="card-statistic__icon" src="images/icon-work.svg" alt="">
+        </header>
             
-            <div class="card card-secondary card-secondary__statistic">
-                <div class="card-statistic__first-line">
+        <!--WORK-->
+        <section class="card card-statistic card-statistic-work grid-item-2">
+                <img class="card-statistic__icon" src="images/icon-work.svg" alt="">
+                
+                <div class="card card-secondary card-secondary__statistic">
+                    <div class="card-statistic__first-line">
                         <p class="card-statistic__title center">
                             Work
                         </p>
-                        <button class="card-statistic__toggler center">
+                        <button aria-label="menu button" class="card-statistic__toggler center">
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
@@ -65,11 +67,11 @@
                 </div>
             </div>
             <!---->
-        </div>
+        </section>
         <!---->
 
         <!--PLAY-->
-        <div class="card card-statistic card-statistic-play grid-item-3">
+        <section class="card card-statistic card-statistic-play grid-item-3">
             <img class="card-statistic__icon" src="images/icon-play.svg" alt="">
             
             <div class="card card-secondary card-secondary__statistic">
@@ -77,7 +79,7 @@
                         <p class="card-statistic__title center">
                             Play
                         </p>
-                        <button class="card-statistic__toggler center">
+                        <button aria-label="menu button" class="card-statistic__toggler center">
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
@@ -93,11 +95,11 @@
                 </div>
             </div>
             <!---->
-        </div>
+        </section>
         <!---->
 
         <!--STUDY-->
-        <div class="card card-statistic card-statistic-study grid-item-4">
+        <section class="card card-statistic card-statistic-study grid-item-4">
             <img class="card-statistic__icon" src="images/icon-study.svg" alt="">
             
             <div class="card card-secondary card-secondary__statistic">
@@ -105,7 +107,7 @@
                         <p class="card-statistic__title center">
                             Study
                         </p>
-                        <button class="card-statistic__toggler center">
+                        <button aria-label="menu button" class="card-statistic__toggler center">
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
@@ -121,11 +123,11 @@
                 </div>
             </div>
             <!---->
-        </div>
+        </section>
         <!---->
 
         <!--EXERCISE-->
-        <div class="card card-statistic card-statistic-exercise grid-item-5">
+        <section class="card card-statistic card-statistic-exercise grid-item-5">
             <img class="card-statistic__icon" src="images/icon-exercise.svg" alt="">
             
             <div class="card card-secondary card-secondary__statistic">
@@ -133,7 +135,7 @@
                         <p class="card-statistic__title center">
                             Exercise
                         </p>
-                        <button class="card-statistic__toggler center">
+                        <button aria-label="menu button" class="card-statistic__toggler center">
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
@@ -149,11 +151,11 @@
                 </div>
             </div>
             <!---->
-        </div>
+        </section>
         <!---->
 
         <!--SOCIAL-->
-        <div class="card card-statistic card-statistic-social grid-item-6">
+        <section class="card card-statistic card-statistic-social grid-item-6">
             <img class="card-statistic__icon" src="images/icon-social.svg" alt="">
             
             <div class="card card-secondary card-secondary__statistic">
@@ -161,7 +163,7 @@
                         <p class="card-statistic__title center">
                             Social
                         </p>
-                        <button class="card-statistic__toggler center">
+                        <button aria-label="menu button" class="card-statistic__toggler center">
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
@@ -177,11 +179,11 @@
                 </div>
             </div>
             <!---->
-        </div>
+        </section>
         <!---->
 
         <!--SELF CARE-->
-        <div class="card card-statistic card-statistic-self-care grid-item-7">
+        <section class="card card-statistic card-statistic-self-care grid-item-7">
             <img class="card-statistic__icon" src="images/icon-self-care.svg" alt="">
             
             <div class="card card-secondary card-secondary__statistic">
@@ -189,7 +191,7 @@
                         <p class="card-statistic__title center">
                             Self Care
                         </p>
-                        <button class="card-statistic__toggler center">
+                        <button aria-label="menu button" class="card-statistic__toggler center">
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
                             <span class="card-statistic__toggler_dot"></span>
@@ -205,8 +207,9 @@
                 </div>
             </div>
             <!---->
-        </div>
+        </section>
         <!----> 
+
     </div>
 
 <script src="main.js"></script>
