@@ -1,6 +1,6 @@
 # Time Tracking – A challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)
 
-*This project started on 01/08/2021.*
+*This project started on 01/08/2022.*
 
 ## Why this project?
 
@@ -22,13 +22,19 @@ I asked a friend to choose one of the Front End Challenges in the Junior level l
 
 *01/09/2022:*
   1. The front-end of the mobile and desktop versions are ready, except for the hover state of the secondary cards of the statistics cards – I havent figured out which color I should use.
+
+<details>
+  <summary>
   2. Just finished to add the functionalities. It was quite fun to try and add them because it was the first time I really tried to access an object and get specifics values. Coding this project has taught me the following things about JS objects:
+  </summary>
+  
       1. You can use "Object.values(obj)" to get to know what an object has inside.
       2. The use of map iteration, it's a truly magnificient tool, I'll be looking forward to use it again.
       3. You can't store a key inside a variable and use that variable to access a value, for example: 
        
       `let a = "age" [...] data = array.name.a`
-      
+  
+</details>
   3. I've used the SWITCH and a lot of ARROW FUNCTIONS, and it feels amazing to understand them more. Arrow function saved me when tying some functions to the buttons, as in:
       1. I created a function that would update the timers everytime it was called (some parameters were required);
       2. I created the buttons and attached the following `event.listener` to them:
@@ -42,8 +48,13 @@ I asked a friend to choose one of the Front End Challenges in the Junior level l
       
       , that seems to mean: the second function is being triggered because you have passed the parameters already, now that you have made it a callback function of the "go" arrow function, which has no parameters, the second will be waiting for the first one to be triggered, which will only occur when the button is clicked.
 
-*01/11/2021:*
+*01/11/2022:*
+
+<details>
+
+<summary>
   1. While I was trying to correct the accessibility errors that FRONTEND had pointed out, one of them being the lack of landmarks, I found out some interesting things, for example:
+</summary>
 
   When I put the personal info card inside a `<header>`, the card was comprised, that changed after I set the card itself as the header, to, the first code was:
   
@@ -175,6 +186,14 @@ I solved that by making the section the card main container, so the final code i
             [...]
           </section>
 
+</details>
+
+  2. I had some trouble using the Open Graph Protocol `og:image` property because I wanted to use an image hosted on a GITHUB repository and the OGP wasn't recognizing or accepting it, instead, the OGP used the first image it found inside the HTML as the thumb for the link. After that, I tried to host the image on other free hosting sites, but no success, The problem was solved after I took a look on GITHUB HTML code and used the RAW link to the image I had uploaded. Apparently, OGP only accept RAW links – i.e. the link the only show the image, without any GUI around.
+  I'm not satisfied yet, the thumb of the link is small, even after I set the size to 1200x630, I want to learn how to make it appear big, as if it were a normal post on Facebook.
+  
+ *01/12/2022:*
+    1. I corrected the responsiveness of the columns when in desktop version by using, for the first time, the "min-max" property to control the width of the columns.
+  
 ## What did I set myself to do, but I didn't and why?
 
 *01/09/2022:*
@@ -183,6 +202,7 @@ I solved that by making the section the card main container, so the final code i
 
 ## What is still to implement?
 
-  1. I want to improve the responsiveness to the mobile devices, maybe to all of them, I haven't truly tested it in various devices.
-  2. Add the preview of layout, a brief description and a title on/to/in the link, using the Open Graph Protocol – so that when I share the link with friends they will be able to see those informations as they do when we share FACEBOOK, WHATSAPP, INSTAGRAM and many other links (even GITHUB has it on it's links).
-  3. Translate this README to pt-BR.
+  1. To make things easier, I want to change the `period buttons` to check-boxes, so they stay active while chosen.
+  2. I've still to add a change of color to the cards when they're being hovered.
+  3. I wanna improve the space division of the first card, as well as spacing the options in there.
+  4. Translate this README to pt-BR.
