@@ -45,7 +45,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100vw;
     min-height: 100vh;
     padding: 40px 10px;
     background-color: var(---very-dark-blue);
@@ -207,7 +206,7 @@ body{
 
 @media screen and (min-width: 667px){
     .grid{
-        grid-template-columns: repeat(4, 12.5rem);
+        grid-template-columns: repeat(4, minmax(7rem, 12rem) );
         grid-template-rows: repeat(2, 13.5rem);
     }
 
