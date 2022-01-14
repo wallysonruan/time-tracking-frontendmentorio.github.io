@@ -147,6 +147,24 @@ const selfCare = (period, actual, past) => {
     selfCarePastTime.innerHTML = `Last ${period} – ${past}hrs`
 }
 
+
+const onlyOneChoice = (choice) => {
+  switch (choice){
+    case "daily":
+      weeklyBttn.checked = false;
+      monthlyBttn.checked = false;
+      break
+    
+    case "weekly":
+      dailyBttn.checked = false;
+      monthlyBttn.checked = false;
+      break
+
+    case "monthly":
+      dailyBttn.checked = false;
+      weeklyBttn.checked = false;
+  }
+}
 const updateTime = (period) =>{
   switch(period){
     case "daily":
@@ -258,6 +276,15 @@ const updateTime = (period) =>{
 
 window.addEventListener("load", updateTime("daily"));
 
-dailyBttn.addEventListener("click", go => updateTime("daily"));
-weeklyBttn.addEventListener("click", go => updateTime("weekly"));
-monthlyBttn.addEventListener("click", go => updateTime("monthly"));
+dailyBttn.addEventListener("click", go = () => {
+  updateTime("daily")
+  onlyOneChoice("daily")
+});
+weeklyBttn.addEventListener("click", go = () => {
+  updateTime("weekly")
+  onlyOneChoice("weekly")
+});
+monthlyBttn.addEventListener("click", go = () => {
+  updateTime("monthly")
+  onlyOneChoice("monthly")
+});

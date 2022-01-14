@@ -10,7 +10,7 @@
 li{
     list-style-type: none;
 }
-button, h1, h2{
+input, button, h1, h2{
     all: unset;
 }
 
@@ -59,7 +59,7 @@ body{
 .card{
     position: relative;
     display: flex;
-    height: 10rem;
+    height: 12rem;
     padding: 20px;
     border-radius: 15px;
 }
@@ -70,25 +70,33 @@ body{
     }
         .card__options{
             justify-content: space-around;
-            height: 20%;
         }
         .card__option{
             display: inline-block;
             color: var(---desaturated-blue);
         }
-            .card__option:hover{
+            .card__option label:hover{
                 color: white;
                 cursor: pointer;
             }
+                #daily:checked ~ label{
+                    color: white;
+                }
+                #weekly:checked ~ label{
+                    color: white;
+                }
+                #monthly:checked ~ label{
+                    color: white;
+                }
     .card__personal-info{
         justify-content: space-between !important;
         top: 0;
         left: 0;
-        height: 60%;
+        height: 70%;
         background-color: var(---blue);
     }
         .photo{
-            height: 70px;
+            height: 5rem;
             border: 3px white solid;
             border-radius: 50%;
         }
@@ -243,10 +251,8 @@ body{
         height: 100%;
     }
         .card__options{
-            display: flex;
             flex-direction: column;
-            height: 25%;
-            width: 100%;
+            gap: 1rem;
         }
         .card__option{
             display: block;
@@ -261,11 +267,9 @@ body{
                 width: 100%;
                 justify-content: left;
             }
-                .photo{
-                    height: 6rem;
-                }
             .card-secondary__name-container{
                 width: 100%;
+                justify-content: flex-start;
             }
                 .name{
                     font-size: 2rem;
@@ -284,7 +288,4 @@ body{
                 .card-statistic__actual-time{
                     font-size: 2.5rem;
                 }
-
-
 }
-    
